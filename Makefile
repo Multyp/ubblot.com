@@ -12,3 +12,5 @@ stop_serv:
 
 remove_serv:
 	sudo docker rm ubblot
+
+update_website: stop_serv remove_serv delete_img build_img start_serv
