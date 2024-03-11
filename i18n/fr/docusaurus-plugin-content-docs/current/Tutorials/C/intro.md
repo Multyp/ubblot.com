@@ -4,6 +4,6 @@ sidebar_position: 1
 
 # Intro
 
-Let's discover **`C`**!
+Découvrons ensemble le **`C`**!
 
-[To be made...]
+[En cours de création...]

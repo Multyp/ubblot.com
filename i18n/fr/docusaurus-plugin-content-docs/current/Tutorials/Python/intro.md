@@ -4,6 +4,6 @@ sidebar_position: 1
 
 # Intro
 
-Let's discover **`Python`**!
+Découvrons ensemble **`Python`**!
 
-[To be made...]
+[En cours de création...]
