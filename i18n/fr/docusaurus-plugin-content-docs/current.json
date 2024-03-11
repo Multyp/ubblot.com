@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.C": {
+    "message": "C",
+    "description": "The label for category C in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Python": {
+    "message": "Python",
+    "description": "The label for category Python in sidebar tutorialSidebar"
+  },
+  "sidebar.devDictSidebar.category.Global Dictionnary": {
+    "message": "Dictionnaire Global",
+    "description": "The label for category Global Dictionnary in sidebar devDictSidebar"
+  }
+}

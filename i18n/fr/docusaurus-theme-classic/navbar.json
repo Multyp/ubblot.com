@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Apprends Avec Ubblot",
+    "description": "Le titre de la navbar"
+  },
+  "logo.alt": {
+    "message": "Le logo d'Ubblot",
+    "description": "Le text alternatif pour le logo d'Ubblot"
+  },
+  "item.label.Tutorials": {
+    "message": "Tutoriels",
+    "description": "Lien sur la barre de navigation nommé tutoriels"
+  },
+  "item.label.DevDictionnary": {
+    "message": "Dictionnaire",
+    "description": "Lien sur la navbar nommé Dictionnaire, redirigeant vers un grand groupe de définitions de notions de developpement"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Lien sur la barre de navigation nommé Blog"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Lien sur la barre de navigation redirigeant vers la page GitHub d'Ubblot"
+  }
+}

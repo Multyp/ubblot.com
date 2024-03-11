@@ -82,7 +82,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'devDictSidebar',
             position: 'left',
-            label: 'DevDictionnary',
+            label: 'Dictionnary',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           /*{
