@@ -1,16 +1,31 @@
+WEBSITE_NAME := ubblot
+IMAGE_NAME   := docusaurus-image
+DOCKER       := sudo docker
+DOCKERFILE   := dockerfile
+
 build_img:
-	sudo docker build -f mydockerfile -t docusaurus-image .
+	$(DOCKER) build -f $(DOCKERFILE) -t $(IMAGE_NAME) .
 
 delete_img:
-	sudo docker rmi docusaurus-image
+	$(DOCKER) rmi $(IMAGE_NAME)
 
 start_serv:
-	sudo docker run -d -p 3002:3002 --name ubblot -m 1g docusaurus-image
+	$(DOCKER) run -d -p 3002:3002 --name $(WEBSITE_NAME) -m 1g $(IMAGE_NAME)
 
 stop_serv:
-	sudo docker stop ubblot
+	$(DOCKER) stop $(WEBSITE_NAME)
 
 remove_serv:
-	sudo docker rm ubblot
+	$(DOCKER) rm $(WEBSITE_NAME)
 
 update_website: stop_serv remove_serv delete_img build_img start_serv
+
+# Usage:
+# - make build_img: Build the Docker image.
+# - make delete_img: Delete the Docker image.
+# - make start_serv: Start the Docker container.
+# - make stop_serv: Stop the Docker container.
+# - make remove_serv: Remove the Docker container.
+# - make update_website: Update the website by stopping the server, removing the container and image, rebuilding the image, and starting the server again.
+
+.PHONY: build_img delete_img start_serv stop_serv remove_serv update_website
