@@ -4,19 +4,19 @@ DOCKER       := sudo docker
 DOCKERFILE   := dockerfile
 
 build_img:
-	$(DOCKER) build -f $(DOCKERFILE) -t $(IMAGE_NAME) .
+	-$(DOCKER) build -f $(DOCKERFILE) -t $(IMAGE_NAME) .
 
 delete_img:
-	$(DOCKER) rmi $(IMAGE_NAME)
+	-$(DOCKER) rmi $(IMAGE_NAME)
 
 start_serv:
-	$(DOCKER) run -d -p 3002:3002 --name $(WEBSITE_NAME) -m 1g $(IMAGE_NAME)
+	-$(DOCKER) run -d -p 3002:3002 --name $(WEBSITE_NAME) -m 1g $(IMAGE_NAME)
 
 stop_serv:
-	$(DOCKER) stop $(WEBSITE_NAME)
+	-$(DOCKER) stop $(WEBSITE_NAME)
 
 remove_serv:
-	$(DOCKER) rm $(WEBSITE_NAME)
+	-$(DOCKER) rm $(WEBSITE_NAME)
 
 update_website: stop_serv remove_serv delete_img build_img start_serv
 

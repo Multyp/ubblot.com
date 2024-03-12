@@ -8,16 +8,16 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install
+RUN yarn install
 
 # Copy the rest of the application code
 COPY . .
 
 # Build the Docusaurus site
-RUN npm run build
+RUN yarn run build
 
 # Expose port 3002
 EXPOSE 3002
 
 # Set the command to serve the Docusaurus site on port 3002
-CMD ["npm", "run", "serve", "--", "--port", "3002"]
+CMD ["yarn", "serve", "--", "--port", "3002"]
