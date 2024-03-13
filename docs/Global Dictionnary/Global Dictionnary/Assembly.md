@@ -1,7 +1,9 @@
 ---
 sidebar_position: 1
 ---
+
 <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet"/>
+
 <div style={{ fontFamily: 'Poppins, sans-serif' }}>
   <div>
     &nbsp; &nbsp;Assembly language is a <span style={{ color: '#ff9900' }}>low-level programming language</span> that closely resembles the machine language instructions of a computer's central processing unit (CPU). It provides a more human-readable representation of machine code instructions, making it easier for programmers to write and understand code at the hardware level.
@@ -10,13 +12,15 @@ sidebar_position: 1
     &nbsp; &nbsp;Assembly language programs consist of mnemonic instructions that correspond directly to the CPU's instruction set, along with symbolic representations of memory addresses and data. Programmers use assembly language to optimize performance, access hardware resources directly, and develop software for embedded systems, device drivers, and other low-level applications.
   </div>
 
-  <h2 style={{ color: '#3366ff' }}>Registers</h2>
+  <br/>
+  ## <span style={{ color: '#3366ff' }}>Registers</span>
 
   <div>
     &nbsp; &nbsp;Registers are small storage locations within the CPU that hold data temporarily while the processor is executing instructions. They play a crucial role in computer architecture, facilitating the efficient processing of data and instructions. In assembly language programming, programmers often directly manipulate these registers to perform various operations and computations.
   </div>
 
-  <h3 style={{ color: '#33cc33' }}>Registers for Arguments</h3>
+  <br/>
+  ### <span style={{ color: '#30b05c' }}>Registers for Arguments</span>
 
   <table>
     <thead>
@@ -65,7 +69,8 @@ sidebar_position: 1
     </tbody>
   </table>
 
-  <h3 style={{ color: '#33cc33' }}>Registers for Return Value</h3>
+  <br/>
+  ### <span style={{ color: '#30b05c' }}>Registers for Return Value</span>
 
   <table>
     <thead>
@@ -94,7 +99,8 @@ sidebar_position: 1
     </tbody>
   </table>
 
-  <h3 style={{ color: '#33cc33' }}>Registers for Free To Use Variables</h3>
+  <br/>
+  ### <span style={{ color: '#30b05c' }}>Registers for Free To Use Variables</span>
 
   <table>
     <thead>
@@ -131,13 +137,15 @@ sidebar_position: 1
     </tbody>
   </table>
 
-  <h2 style={{ color: '#3366ff' }}>Instructions</h2>
+  <br/>
+  ## <span style={{ color: '#3366ff' }}>Instructions</span>
 
   <div>
     &nbsp; &nbsp;In assembly language programming, instructions are the fundamental building blocks of a program. They direct the CPU to perform specific tasks, such as arithmetic operations, memory manipulation, or control flow decisions. Each statement corresponds directly to a machine language instruction understood by the CPU.
   </div>
 
-  <h3 style={{ color: '#33cc33' }}>Conditional Jumps Instructions</h3>
+  <br/>
+  ### <span style={{ color: '#30b05c' }}>Conditional Jumps Instructions</span>
 
   <div>
     &nbsp; &nbsp;Jump statements are used to alter the flow of program execution based on certain conditions. They allow the program to "jump" to a different part of the code based on the result of a previous operation or the state of certain flags within the CPU. Jump statements are crucial for implementing conditional branching and loops in assembly language programs.
@@ -171,7 +179,8 @@ sidebar_position: 1
     &nbsp; &nbsp;These statements are essential for implementing conditional logic and controlling the flow of execution in assembly language programs. Understanding how and when to use jump statements is crucial for writing efficient and functional code.
   </div>
 
-  <h3 style={{ color: '#33cc33' }}>Arithmetic and Logical Instructions</h3>
+  <br/>
+  ### <span style={{ color: '#30b05c' }}>Arithmetic and Logical Instructions</span>
 
   <div>
     &nbsp; &nbsp;In assembly language programming, arithmetic and logical instructions are used to perform mathematical operations and logical evaluations on data stored in registers or memory locations. These instructions are fundamental for implementing algorithms and manipulating data effectively.
@@ -199,7 +208,8 @@ sidebar_position: 1
     <li><span style={{ color: '#ff9900' }}>`ROL/ROR`</span>: Rotate left/right</li>
   </ul>
 
-  <h3 style={{ color: '#33cc33' }}>Memory Manipulation Instructions</h3>
+  <br/>
+  ### <span style={{ color: '#30b05c' }}>Memory Manipulation Instructions</span>
 
   <div>
     &nbsp; &nbsp;Manipulating memory is a common task in assembly language programming. These instructions facilitate reading from and writing to memory locations.
@@ -220,7 +230,8 @@ sidebar_position: 1
     <li><span style={{ color: '#ff9900' }}>`LEA`</span>: Load effective address (calculate address and store in destination)</li>
   </ul>
 
-  <h3 style={{ color: '#33cc33' }}>Control Flow Instructions</h3>
+  <br/>
+  ### <span style={{ color: '#30b05c' }}>Control Flow Instructions</span>
 
   <div>
     &nbsp; &nbsp;Control flow instructions determine the order in which instructions are executed in a program. They include branching and looping instructions.
