@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+title: Assembly
 ---
 
 <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet"/>
