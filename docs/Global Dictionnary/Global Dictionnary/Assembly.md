@@ -14,14 +14,14 @@ title: Assembly
   </div>
 
   <br/>
-  ## <span style={{ color: '#3366ff' }}>Registers</span>
+  ## <span style={{ color: 'var(--md-secondary-title-color)' }}>Registers</span>
 
   <div>
     &nbsp; &nbsp;Registers are small storage locations within the CPU that hold data temporarily while the processor is executing instructions. They play a crucial role in computer architecture, facilitating the efficient processing of data and instructions. In assembly language programming, programmers often directly manipulate these registers to perform various operations and computations.
   </div>
 
   <br/>
-  ### <span style={{ color: '#30b05c' }}>Registers for Arguments</span>
+  ### <span style={{ color: 'var(--md-tertiary-title-color)' }}>Registers for Arguments</span>
 
   <table>
     <thead>
@@ -37,41 +37,41 @@ title: Assembly
     <tbody>
       <tr>
         <td>1</td>
-        <td style={{ color: '#ff6666' }}>RDI</td>
-        <td style={{ color: '#ff6666' }}>EDI</td>
-        <td style={{ color: '#ff6666' }}>DI</td>
-        <td style={{ color: '#ff6666' }}>DIL</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>RDI</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>EDI</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>DI</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>DIL</td>
         <td>Destination</td>
       </tr>
       <tr>
         <td>2</td>
-        <td style={{ color: '#ff6666' }}>RSI</td>
-        <td style={{ color: '#ff6666' }}>ESI</td>
-        <td style={{ color: '#ff6666' }}>SI</td>
-        <td style={{ color: '#ff6666' }}>SIL</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>RSI</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>ESI</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>SI</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>SIL</td>
         <td>Source</td>
       </tr>
       <tr>
         <td>3</td>
-        <td style={{ color: '#ff6666' }}>RDX</td>
-        <td style={{ color: '#ff6666' }}>EDX</td>
-        <td style={{ color: '#ff6666' }}>DX</td>
-        <td style={{ color: '#ff6666' }}>DH / DL</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>RDX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>EDX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>DX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>DH / DL</td>
         <td></td>
       </tr>
       <tr>
         <td>4</td>
-        <td style={{ color: '#ff6666' }}>RCX</td>
-        <td style={{ color: '#ff6666' }}>ECX</td>
-        <td style={{ color: '#ff6666' }}>CX</td>
-        <td style={{ color: '#ff6666' }}>CH / CL</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>RCX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>ECX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>CX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>CH / CL</td>
         <td></td>
       </tr>
     </tbody>
   </table>
 
   <br/>
-  ### <span style={{ color: '#30b05c' }}>Registers for Return Value</span>
+  ### <span style={{ color: 'var(--md-tertiary-title-color)' }}>Registers for Return Value</span>
 
   <table>
     <thead>
@@ -83,25 +83,25 @@ title: Assembly
     <tbody>
       <tr>
         <td>64 bits</td>
-        <td style={{ color: '#ff6666' }}>RAX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>RAX</td>
       </tr>
       <tr>
         <td>32 bits</td>
-        <td style={{ color: '#ff6666' }}>EAX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>EAX</td>
       </tr>
       <tr>
         <td>16 bits</td>
-        <td style={{ color: '#ff6666' }}>AX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>AX</td>
       </tr>
       <tr>
         <td>8 bits</td>
-        <td style={{ color: '#ff6666' }}>AH / AL</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>AH / AL</td>
       </tr>
     </tbody>
   </table>
 
   <br/>
-  ### <span style={{ color: '#30b05c' }}>Registers for Free To Use Variables</span>
+  ### <span style={{ color: 'var(--md-tertiary-title-color)' }}>Registers for Free To Use Variables</span>
 
   <table>
     <thead>
@@ -115,38 +115,38 @@ title: Assembly
     </thead>
     <tbody>
       <tr>
-        <td style={{ color: '#ff6666' }}>RBX</td>
-        <td style={{ color: '#ff6666' }}>EBX</td>
-        <td style={{ color: '#ff6666' }}>BX</td>
-        <td style={{ color: '#ff6666' }}>BH / BL</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>RBX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>EBX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>BX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>BH / BL</td>
         <td>Regular or Common Variable</td>
       </tr>
       <tr>
-        <td style={{ color: '#ff6666' }}>RBP</td>
-        <td style={{ color: '#ff6666' }}>EBP</td>
-        <td style={{ color: '#ff6666' }}>BP</td>
-        <td style={{ color: '#ff6666' }}>BPL</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>RBP</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>EBP</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>BP</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>BPL</td>
         <td>Frame pointer (ENTER, LEAVE…)</td>
       </tr>
       <tr>
-        <td style={{ color: '#ff6666' }}>RSP</td>
-        <td style={{ color: '#ff6666' }}>ESP</td>
-        <td style={{ color: '#ff6666' }}>SP</td>
-        <td style={{ color: '#ff6666' }}>SPL</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>RSP</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>ESP</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>SP</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>SPL</td>
         <td>Stack pointer (used with PUSH, POP…)</td>
       </tr>
     </tbody>
   </table>
 
   <br/>
-  ## <span style={{ color: '#3366ff' }}>Instructions</span>
+  ## <span style={{ color: 'var(--md-secondary-title-color)' }}>Instructions</span>
 
   <div>
     &nbsp; &nbsp;In assembly language programming, instructions are the fundamental building blocks of a program. They direct the CPU to perform specific tasks, such as arithmetic operations, memory manipulation, or control flow decisions. Each statement corresponds directly to a machine language instruction understood by the CPU.
   </div>
 
   <br/>
-  ### <span style={{ color: '#30b05c' }}>Conditional Jumps Instructions</span>
+  ### <span style={{ color: 'var(--md-tertiary-title-color)' }}>Conditional Jumps Instructions</span>
 
   <div>
     &nbsp; &nbsp;Jump statements are used to alter the flow of program execution based on certain conditions. They allow the program to "jump" to a different part of the code based on the result of a previous operation or the state of certain flags within the CPU. Jump statements are crucial for implementing conditional branching and loops in assembly language programs.
@@ -181,7 +181,7 @@ title: Assembly
   </div>
 
   <br/>
-  ### <span style={{ color: '#30b05c' }}>Arithmetic and Logical Instructions</span>
+  ### <span style={{ color: 'var(--md-tertiary-title-color)' }}>Arithmetic and Logical Instructions</span>
 
   <div>
     &nbsp; &nbsp;In assembly language programming, arithmetic and logical instructions are used to perform mathematical operations and logical evaluations on data stored in registers or memory locations. These instructions are fundamental for implementing algorithms and manipulating data effectively.
@@ -210,7 +210,7 @@ title: Assembly
   </ul>
 
   <br/>
-  ### <span style={{ color: '#30b05c' }}>Memory Manipulation Instructions</span>
+  ### <span style={{ color: 'var(--md-tertiary-title-color)' }}>Memory Manipulation Instructions</span>
 
   <div>
     &nbsp; &nbsp;Manipulating memory is a common task in assembly language programming. These instructions facilitate reading from and writing to memory locations.
@@ -232,7 +232,7 @@ title: Assembly
   </ul>
 
   <br/>
-  ### <span style={{ color: '#30b05c' }}>Control Flow Instructions</span>
+  ### <span style={{ color: 'var(--md-tertiary-title-color)' }}>Control Flow Instructions</span>
 
   <div>
     &nbsp; &nbsp;Control flow instructions determine the order in which instructions are executed in a program. They include branching and looping instructions.

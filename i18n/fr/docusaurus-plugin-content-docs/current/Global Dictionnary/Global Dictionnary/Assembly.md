@@ -14,7 +14,7 @@ title: Assembleur
   </div>
 
   <br/>
-  ## <span style={{ color: '#3366ff' }}>Registres</span>
+  ## <span style={{ color: 'var( --md-secondary-title-color)' }}>Registres</span>
 
   <div>
     &nbsp; &nbsp;Les registres sont de petits emplacements de stockage à l'intérieur du CPU qui retiennent temporairement des données pendant l'exécution des instructions par le processeur. Ils jouent un rôle crucial dans l'architecture informatique, facilitant le traitement efficace des données et des instructions. En programmation en assembleur, on manipule directement ces registres pour effectuer diverses opérations et calculs.
@@ -37,34 +37,34 @@ title: Assembleur
     <tbody>
       <tr>
         <td>1</td>
-        <td style={{ color: '#ff6666' }}>RDI</td>
-        <td style={{ color: '#ff6666' }}>EDI</td>
-        <td style={{ color: '#ff6666' }}>DI</td>
-        <td style={{ color: '#ff6666' }}>DIL</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>RDI</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>EDI</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>DI</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>DIL</td>
         <td>Destination</td>
       </tr>
       <tr>
         <td>2</td>
-        <td style={{ color: '#ff6666' }}>RSI</td>
-        <td style={{ color: '#ff6666' }}>ESI</td>
-        <td style={{ color: '#ff6666' }}>SI</td>
-        <td style={{ color: '#ff6666' }}>SIL</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>RSI</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>ESI</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>SI</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>SIL</td>
         <td>Source</td>
       </tr>
       <tr>
         <td>3</td>
-        <td style={{ color: '#ff6666' }}>RDX</td>
-        <td style={{ color: '#ff6666' }}>EDX</td>
-        <td style={{ color: '#ff6666' }}>DX</td>
-        <td style={{ color: '#ff6666' }}>DH / DL</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>RDX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>EDX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>DX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>DH / DL</td>
         <td></td>
       </tr>
       <tr>
         <td>4</td>
-        <td style={{ color: '#ff6666' }}>RCX</td>
-        <td style={{ color: '#ff6666' }}>ECX</td>
-        <td style={{ color: '#ff6666' }}>CX</td>
-        <td style={{ color: '#ff6666' }}>CH / CL</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>RCX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>ECX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>CX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>CH / CL</td>
         <td></td>
       </tr>
     </tbody>
@@ -83,19 +83,19 @@ title: Assembleur
     <tbody>
       <tr>
         <td>64 bits</td>
-        <td style={{ color: '#ff6666' }}>RAX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>RAX</td>
       </tr>
       <tr>
         <td>32 bits</td>
-        <td style={{ color: '#ff6666' }}>EAX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>EAX</td>
       </tr>
       <tr>
         <td>16 bits</td>
-        <td style={{ color: '#ff6666' }}>AX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>AX</td>
       </tr>
       <tr>
         <td>8 bits</td>
-        <td style={{ color: '#ff6666' }}>AH / AL</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>AH / AL</td>
       </tr>
     </tbody>
   </table>
@@ -115,31 +115,31 @@ title: Assembleur
     </thead>
     <tbody>
       <tr>
-        <td style={{ color: '#ff6666' }}>RBX</td>
-        <td style={{ color: '#ff6666' }}>EBX</td>
-        <td style={{ color: '#ff6666' }}>BX</td>
-        <td style={{ color: '#ff6666' }}>BH / BL</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>RBX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>EBX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>BX</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>BH / BL</td>
         <td>Variable régulière ou commune</td>
       </tr>
       <tr>
-        <td style={{ color: '#ff6666' }}>RBP</td>
-        <td style={{ color: '#ff6666' }}>EBP</td>
-        <td style={{ color: '#ff6666' }}>BP</td>
-        <td style={{ color: '#ff6666' }}>BPL</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>RBP</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>EBP</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>BP</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>BPL</td>
         <td>Pointeur de trame (ENTER, LEAVE…)</td>
       </tr>
       <tr>
-        <td style={{ color: '#ff6666' }}>RSP</td>
-        <td style={{ color: '#ff6666' }}>ESP</td>
-        <td style={{ color: '#ff6666' }}>SP</td>
-        <td style={{ color: '#ff6666' }}>SPL</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>RSP</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>ESP</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>SP</td>
+        <td style={{ color: 'var( --md-table-values-color)' }}>SPL</td>
         <td>Pointeur de pile (utilisé avec PUSH, POP…)</td>
       </tr>
     </tbody>
   </table>
 
   <br/>
-  ## <span style={{ color: '#3366ff' }}>Instructions</span>
+  ## <span style={{ color: 'var( --md-secondary-title-color)' }}>Instructions</span>
 
   <div>
     &nbsp; &nbsp;En assembleur, les instructions sont les éléments fondamentaux d'un programme. Elles dirigent le CPU pour effectuer des tâches spécifiques, telles que des opérations arithmétiques, la manipulation de la mémoire ou des décisions de flux de contrôle. Chaque déclaration correspond directement à une instruction en langage machine comprise par le CPU.
