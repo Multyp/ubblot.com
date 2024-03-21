@@ -7,7 +7,7 @@ title: Assembleur
 
 <div style={{ fontFamily: 'Poppins, sans-serif' }}>
   <div>
-    &nbsp; &nbsp;L'Assembleur est un <span style={{ color: '#ff9900' }}>langage de programmation de bas niveau</span> qui ressemble étroitement aux instructions du langage machine d'un processeur (CPU) d'ordinateur. Il offre une représentation plus lisible par l'homme des instructions en langage machine, ce qui facilite la tâche des programmeurs pour écrire et comprendre le code au niveau matériel.
+    &nbsp; &nbsp;L'Assembleur est un <span style={{ color: 'var(--md-basic-highlight)' }}>langage de programmation de bas niveau</span> qui ressemble étroitement aux instructions du langage machine d'un processeur (CPU) d'ordinateur. Il offre une représentation plus lisible par l'homme des instructions en langage machine, ce qui facilite la tâche des programmeurs pour écrire et comprendre le code au niveau matériel.
   </div>
   <div>
     &nbsp; &nbsp;Les programmes en assembleur sont composés d'instructions mnémoniques qui correspondent directement à l'ensemble d'instructions du CPU, ainsi que de représentations symboliques des adresses mémoire et des données. On utilise l'assembleur notamment pour optimiser les performances, accéder directement aux ressources matérielles et développer des logiciels pour les systèmes embarqués, les pilotes de périphériques et autres applications de bas niveau.
@@ -153,27 +153,27 @@ title: Assembleur
   </div>
 
   <div>
-    Voici une description des <span style={{ color: '#ff9900' }}>`JMP`</span> instructions courantes et leurs significations :
+    Voici une description des <span style={{ color: 'var(--md-basic-highlight)' }}>`JMP`</span> instructions courantes et leurs significations :
   </div>
 
   <ul>
-    <li><span style={{ color: '#ff9900' }}>`JMP`</span> : Saut (sans condition)</li>
-    <li><span style={{ color: '#ff9900' }}>`JA/JNBE`</span> (au-dessus) : Saut si au-dessus (non signé)</li>
-    <li><span style={{ color: '#ff9900' }}>`JNC/JAE/JNB`</span> : Saut si le drapeau de retenue est clair (plus grand ou égal non signé)</li>
-    <li><span style={{ color: '#ff9900' }}>`JC/JB/JNAE`</span> (en dessous) : Saut si le drapeau de retenue est défini (plus petit non signé)</li>
-    <li><span style={{ color: '#ff9900' }}>`JE/JZ`</span> : Saut si égal (après CMP ou soustraction)</li>
-    <li><span style={{ color: '#ff9900' }}>`JNE/JNZ`</span> : Saut si différent</li>
-    <li><span style={{ color: '#ff9900' }}>`JP/JPE`</span> : Saut si parité paire</li>
-    <li><span style={{ color: '#ff9900' }}>`JNP/JPO`</span> : Saut si parité impaire</li>
-    <li><span style={{ color: '#ff9900' }}>`JO`</span> : Saut si débordement</li>
-    <li><span style={{ color: '#ff9900' }}>`JNO`</span> : Saut si pas de débordement</li>
-    <li><span style={{ color: '#ff9900' }}>`JS`</span> : Saut si le drapeau de signe est défini (négatif)</li>
-    <li><span style={{ color: '#ff9900' }}>`JNS`</span> : Saut si le drapeau de signe est clair</li>
-    <li><span style={{ color: '#ff9900' }}>`JG/JNLE`</span> (plus grand) : Saut si plus grand (signé)</li>
-    <li><span style={{ color: '#ff9900' }}>`JGE/JNL`</span> : Saut si plus grand ou égal (signé)</li>
-    <li><span style={{ color: '#ff9900' }}>`JL/JNGE`</span> (plus petit) : Saut si plus petit (signé)</li>
-    <li><span style={{ color: '#ff9900' }}>`JLE/JNG`</span> : Saut si plus petit ou égal (signé)</li>
-    <li><span style={{ color: '#ff9900' }}>`JCXZ`</span> : Saut si le registre CX est zéro (par exemple, pour tester comment une boucle LOOPZ REPZ s'est terminée)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JMP`</span> : Saut (sans condition)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JA/JNBE`</span> (au-dessus) : Saut si au-dessus (non signé)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JNC/JAE/JNB`</span> : Saut si le drapeau de retenue est clair (plus grand ou égal non signé)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JC/JB/JNAE`</span> (en dessous) : Saut si le drapeau de retenue est défini (plus petit non signé)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JE/JZ`</span> : Saut si égal (après CMP ou soustraction)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JNE/JNZ`</span> : Saut si différent</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JP/JPE`</span> : Saut si parité paire</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JNP/JPO`</span> : Saut si parité impaire</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JO`</span> : Saut si débordement</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JNO`</span> : Saut si pas de débordement</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JS`</span> : Saut si le drapeau de signe est défini (négatif)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JNS`</span> : Saut si le drapeau de signe est clair</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JG/JNLE`</span> (plus grand) : Saut si plus grand (signé)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JGE/JNL`</span> : Saut si plus grand ou égal (signé)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JL/JNGE`</span> (plus petit) : Saut si plus petit (signé)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JLE/JNG`</span> : Saut si plus petit ou égal (signé)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JCXZ`</span> : Saut si le registre CX est zéro (par exemple, pour tester comment une boucle LOOPZ REPZ s'est terminée)</li>
   </ul>
 
   <div>
@@ -189,24 +189,24 @@ title: Assembleur
 
   <h4>Instructions arithmétiques</h4>
   <ul>
-    <li><span style={{ color: '#ff9900' }}>`ADD`</span> : Ajouter l'opérande source à l'opérande destination</li>
-    <li><span style={{ color: '#ff9900' }}>`SUB`</span> : Soustraire l'opérande source de l'opérande destination</li>
-    <li><span style={{ color: '#ff9900' }}>`INC`</span> : Incrémenter l'opérande destination de 1</li>
-    <li><span style={{ color: '#ff9900' }}>`DEC`</span> : Décrémenter l'opérande destination de 1</li>
-    <li><span style={{ color: '#ff9900' }}>`MUL`</span> : Multiplier des opérandes non signés</li>
-    <li><span style={{ color: '#ff9900' }}>`IMUL`</span> : Multiplier des opérandes signés</li>
-    <li><span style={{ color: '#ff9900' }}>`DIV`</span> : Diviser des opérandes non signés</li>
-    <li><span style={{ color: '#ff9900' }}>`IDIV`</span> : Diviser des opérandes signés</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`ADD`</span> : Ajouter l'opérande source à l'opérande destination</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`SUB`</span> : Soustraire l'opérande source de l'opérande destination</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`INC`</span> : Incrémenter l'opérande destination de 1</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`DEC`</span> : Décrémenter l'opérande destination de 1</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`MUL`</span> : Multiplier des opérandes non signés</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`IMUL`</span> : Multiplier des opérandes signés</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`DIV`</span> : Diviser des opérandes non signés</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`IDIV`</span> : Diviser des opérandes signés</li>
   </ul>
 
   <h4>Instructions logiques</h4>
   <ul>
-    <li><span style={{ color: '#ff9900' }}>`AND`</span> : Opération ET logique</li>
-    <li><span style={{ color: '#ff9900' }}>`OR`</span> : Opération OU logique</li>
-    <li><span style={{ color: '#ff9900' }}>`XOR`</span> : Opération OU exclusif logique</li>
-    <li><span style={{ color: '#ff9900' }}>`NOT`</span> : Opération NON logique (complément à un)</li>
-    <li><span style={{ color: '#ff9900' }}>`SHL/SHR`</span> : Décalage à gauche/droite</li>
-    <li><span style={{ color: '#ff9900' }}>`ROL/ROR`</span> : Rotation à gauche/droite</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`AND`</span> : Opération ET logique</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`OR`</span> : Opération OU logique</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`XOR`</span> : Opération OU exclusif logique</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`NOT`</span> : Opération NON logique (complément à un)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`SHL/SHR`</span> : Décalage à gauche/droite</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`ROL/ROR`</span> : Rotation à gauche/droite</li>
   </ul>
 
   <br/>
@@ -217,18 +217,18 @@ title: Assembleur
   </div>
 
   <ul>
-    <li><span style={{ color: '#ff9900' }}>`PUSH`</span> : Empiler une valeur sur la pile</li>
-    <li><span style={{ color: '#ff9900' }}>`POP`</span> : Dépiler une valeur de la pile</li>
-    <li><span style={{ color: '#ff9900' }}>`CALL`</span> : Appeler une procédure ou une fonction</li>
-    <li><span style={{ color: '#ff9900' }}>`RET`</span> : Retourner d'une procédure</li>
-    <li><span style={{ color: '#ff9900' }}>`MOV`</span> : Déplacer des données entre la mémoire et les registres</li>
-    <li><span style={{ color: '#ff9900' }}>`MOVSB`</span> : Déplacer un octet de DS:[SI] à ES:[DI]</li>
-    <li><span style={{ color: '#ff9900' }}>`MOVSW`</span> : Déplacer un mot de DS:[SI] à ES:[DI]</li>
-    <li><span style={{ color: '#ff9900' }}>`MOVSD`</span> : Déplacer un double mot de DS:[SI] à ES:[DI]</li>
-    <li><span style={{ color: '#ff9900' }}>`MOVSX`</span> : Déplacer avec extension de signe (extension de signe d'un octet à un mot ou d'un mot à un double mot)</li>
-    <li><span style={{ color: '#ff9900' }}>`MOVZX`</span> : Déplacer avec extension nulle (extension nulle d'un octet à un mot ou d'un mot à un double mot)</li>
-    <li><span style={{ color: '#ff9900' }}>`MOVSX/MOVZX`</span> (registre) : Déplacer avec extension de signe ou de zéro d'un registre à un autre</li>
-    <li><span style={{ color: '#ff9900' }}>`LEA`</span> : Charger l'adresse effective (calculer l'adresse et la stocker dans la destination)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`PUSH`</span> : Empiler une valeur sur la pile</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`POP`</span> : Dépiler une valeur de la pile</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`CALL`</span> : Appeler une procédure ou une fonction</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`RET`</span> : Retourner d'une procédure</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`MOV`</span> : Déplacer des données entre la mémoire et les registres</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`MOVSB`</span> : Déplacer un octet de DS:[SI] à ES:[DI]</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`MOVSW`</span> : Déplacer un mot de DS:[SI] à ES:[DI]</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`MOVSD`</span> : Déplacer un double mot de DS:[SI] à ES:[DI]</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`MOVSX`</span> : Déplacer avec extension de signe (extension de signe d'un octet à un mot ou d'un mot à un double mot)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`MOVZX`</span> : Déplacer avec extension nulle (extension nulle d'un octet à un mot ou d'un mot à un double mot)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`MOVSX/MOVZX`</span> (registre) : Déplacer avec extension de signe ou de zéro d'un registre à un autre</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`LEA`</span> : Charger l'adresse effective (calculer l'adresse et la stocker dans la destination)</li>
   </ul>
 
   <br/>
@@ -239,12 +239,12 @@ title: Assembleur
   </div>
 
   <ul>
-    <li><span style={{ color: '#ff9900' }}>`CMP`</span> : Comparer deux opérandes</li>
-    <li><span style={{ color: '#ff9900' }}>`JMP`</span> : Saut inconditionnel</li>
-    <li><a href="/fr/docs/Global%20Dictionnary/Global%20Dictionnary/Assembly#instructions-de-saut-conditionnel" style={{ color: '#ff9900' }}>`Autres sauts`</a>: Sauts conditionnels basés sur les résultats de la comparaison</li>
-    <li><span style={{ color: '#ff9900' }}>`LOOP`</span> : Décrémenter le compteur de boucle et sauter si le compteur n'est pas nul</li>
-    <li><span style={{ color: '#ff9900' }}>`CALL`, `RET`</span> : Appeler et retourner des sous-routines</li>
-    <li><span style={{ color: '#ff9900' }}>`INT`</span> : Interruption logicielle</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`CMP`</span> : Comparer deux opérandes</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JMP`</span> : Saut inconditionnel</li>
+    <li><a href="/fr/docs/Global%20Dictionnary/Global%20Dictionnary/Assembly#instructions-de-saut-conditionnel" style={{ color: 'var(--md-basic-highlight)' }}>`Autres sauts`</a>: Sauts conditionnels basés sur les résultats de la comparaison</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`LOOP`</span> : Décrémenter le compteur de boucle et sauter si le compteur n'est pas nul</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`CALL`, `RET`</span> : Appeler et retourner des sous-routines</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`INT`</span> : Interruption logicielle</li>
   </ul>
 
   <div>

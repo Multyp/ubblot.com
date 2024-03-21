@@ -7,7 +7,7 @@ title: Assembly
 
 <div style={{ fontFamily: 'Poppins, sans-serif' }}>
   <div>
-    &nbsp; &nbsp;Assembly language is a <span style={{ color: '#ff9900' }}>low-level programming language</span> that closely resembles the machine language instructions of a computer's central processing unit (CPU). It provides a more human-readable representation of machine code instructions, making it easier for programmers to write and understand code at the hardware level.
+    &nbsp; &nbsp;Assembly language is a <span style={{ color: 'var(--md-basic-highlight)' }}>low-level programming language</span> that closely resembles the machine language instructions of a computer's central processing unit (CPU). It provides a more human-readable representation of machine code instructions, making it easier for programmers to write and understand code at the hardware level.
   </div>
   <div>
     &nbsp; &nbsp;Assembly language programs consist of mnemonic instructions that correspond directly to the CPU's instruction set, along with symbolic representations of memory addresses and data. Programmers use assembly language to optimize performance, access hardware resources directly, and develop software for embedded systems, device drivers, and other low-level applications.
@@ -153,27 +153,27 @@ title: Assembly
   </div>
 
   <div>
-    Here's a breakdown of common <span style={{ color: '#ff9900' }}>`JMP`</span> statements and their meanings:
+    Here's a breakdown of common <span style={{ color: 'var(--md-basic-highlight)' }}>`JMP`</span> statements and their meanings:
   </div>
 
   <ul>
-    <li><span style={{ color: '#ff9900' }}>`JMP`</span>: Jump (no condition)</li>
-    <li><span style={{ color: '#ff9900' }}>`JA/JNBE`</span> (above): Jump if above (unsigned)</li>
-    <li><span style={{ color: '#ff9900' }}>`JNC/JAE/JNB`</span>: Jump if carry flag is clear (unsigned greater than or equal)</li>
-    <li><span style={{ color: '#ff9900' }}>`JC/JB/JNAE`</span> (below): Jump if carry flag is set (unsigned less than)</li>
-    <li><span style={{ color: '#ff9900' }}>`JE/JZ`</span>: Jump if equal (after CMP or subtraction)</li>
-    <li><span style={{ color: '#ff9900' }}>`JNE/JNZ`</span>: Jump if not equal</li>
-    <li><span style={{ color: '#ff9900' }}>`JP/JPE`</span>: Jump if parity even</li>
-    <li><span style={{ color: '#ff9900' }}>`JNP/JPO`</span>: Jump if parity odd</li>
-    <li><span style={{ color: '#ff9900' }}>`JO`</span>: Jump if overflow</li>
-    <li><span style={{ color: '#ff9900' }}>`JNO`</span>: Jump if no overflow</li>
-    <li><span style={{ color: '#ff9900' }}>`JS`</span>: Jump if sign flag is set (negative)</li>
-    <li><span style={{ color: '#ff9900' }}>`JNS`</span>: Jump if sign flag is clear</li>
-    <li><span style={{ color: '#ff9900' }}>`JG/JNLE`</span> (greater): Jump if greater (signed)</li>
-    <li><span style={{ color: '#ff9900' }}>`JGE/JNL`</span>: Jump if greater than or equal (signed)</li>
-    <li><span style={{ color: '#ff9900' }}>`JL/JNGE`</span> (less): Jump if less (signed)</li>
-    <li><span style={{ color: '#ff9900' }}>`JLE/JNG`</span>: Jump if less than or equal (signed)</li>
-    <li><span style={{ color: '#ff9900' }}>`JCXZ`</span>: Jump if CX register is zero (e.g., for testing how a LOOPZ REPZ loop ended)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JMP`</span>: Jump (no condition)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JA/JNBE`</span> (above): Jump if above (unsigned)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JNC/JAE/JNB`</span>: Jump if carry flag is clear (unsigned greater than or equal)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JC/JB/JNAE`</span> (below): Jump if carry flag is set (unsigned less than)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JE/JZ`</span>: Jump if equal (after CMP or subtraction)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JNE/JNZ`</span>: Jump if not equal</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JP/JPE`</span>: Jump if parity even</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JNP/JPO`</span>: Jump if parity odd</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JO`</span>: Jump if overflow</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JNO`</span>: Jump if no overflow</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JS`</span>: Jump if sign flag is set (negative)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JNS`</span>: Jump if sign flag is clear</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JG/JNLE`</span> (greater): Jump if greater (signed)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JGE/JNL`</span>: Jump if greater than or equal (signed)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JL/JNGE`</span> (less): Jump if less (signed)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JLE/JNG`</span>: Jump if less than or equal (signed)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JCXZ`</span>: Jump if CX register is zero (e.g., for testing how a LOOPZ REPZ loop ended)</li>
   </ul>
 
   <div>
@@ -189,24 +189,24 @@ title: Assembly
 
   <h4>Arithmetic Instructions</h4>
   <ul>
-    <li><span style={{ color: '#ff9900' }}>`ADD`</span>: Add source operand to destination operand</li>
-    <li><span style={{ color: '#ff9900' }}>`SUB`</span>: Subtract source operand from destination operand</li>
-    <li><span style={{ color: '#ff9900' }}>`INC`</span>: Increment destination operand by 1</li>
-    <li><span style={{ color: '#ff9900' }}>`DEC`</span>: Decrement destination operand by 1</li>
-    <li><span style={{ color: '#ff9900' }}>`MUL`</span>: Multiply unsigned operands</li>
-    <li><span style={{ color: '#ff9900' }}>`IMUL`</span>: Multiply signed operands</li>
-    <li><span style={{ color: '#ff9900' }}>`DIV`</span>: Divide unsigned operands</li>
-    <li><span style={{ color: '#ff9900' }}>`IDIV`</span>: Divide signed operands</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`ADD`</span>: Add source operand to destination operand</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`SUB`</span>: Subtract source operand from destination operand</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`INC`</span>: Increment destination operand by 1</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`DEC`</span>: Decrement destination operand by 1</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`MUL`</span>: Multiply unsigned operands</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`IMUL`</span>: Multiply signed operands</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`DIV`</span>: Divide unsigned operands</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`IDIV`</span>: Divide signed operands</li>
   </ul>
 
   <h4>Logical Instructions</h4>
   <ul>
-    <li><span style={{ color: '#ff9900' }}>`AND`</span>: Bitwise AND operation</li>
-    <li><span style={{ color: '#ff9900' }}>`OR`</span>: Bitwise OR operation</li>
-    <li><span style={{ color: '#ff9900' }}>`XOR`</span>: Bitwise XOR operation</li>
-    <li><span style={{ color: '#ff9900' }}>`NOT`</span>: Bitwise NOT operation (one's complement)</li>
-    <li><span style={{ color: '#ff9900' }}>`SHL/SHR`</span>: Shift left/right</li>
-    <li><span style={{ color: '#ff9900' }}>`ROL/ROR`</span>: Rotate left/right</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`AND`</span>: Bitwise AND operation</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`OR`</span>: Bitwise OR operation</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`XOR`</span>: Bitwise XOR operation</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`NOT`</span>: Bitwise NOT operation (one's complement)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`SHL/SHR`</span>: Shift left/right</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`ROL/ROR`</span>: Rotate left/right</li>
   </ul>
 
   <br/>
@@ -217,18 +217,18 @@ title: Assembly
   </div>
 
   <ul>
-    <li><span style={{ color: '#ff9900' }}>`PUSH`</span>: Push value onto the stack</li>
-    <li><span style={{ color: '#ff9900' }}>`POP`</span>: Pop value from the stack</li>
-    <li><span style={{ color: '#ff9900' }}>`CALL`</span>: Call a procedure or function</li>
-    <li><span style={{ color: '#ff9900' }}>`RET`</span>: Return from a procedure</li>
-    <li><span style={{ color: '#ff9900' }}>`MOV`</span>: Move data between memory and registers</li>
-    <li><span style={{ color: '#ff9900' }}>`MOVSB`</span>: Move byte from DS:[SI] to ES:[DI]</li>
-    <li><span style={{ color: '#ff9900' }}>`MOVSW`</span>: Move word from DS:[SI] to ES:[DI]</li>
-    <li><span style={{ color: '#ff9900' }}>`MOVSD`</span>: Move doubleword from DS:[SI] to ES:[DI]</li>
-    <li><span style={{ color: '#ff9900' }}>`MOVSX`</span>: Move with sign extension (sign-extend byte to word or word to doubleword)</li>
-    <li><span style={{ color: '#ff9900' }}>`MOVZX`</span>: Move with zero extension (zero-extend byte to word or word to doubleword)</li>
-    <li><span style={{ color: '#ff9900' }}>`MOVSX/MOVZX`</span> (register): Move with sign or zero extension from register to register</li>
-    <li><span style={{ color: '#ff9900' }}>`LEA`</span>: Load effective address (calculate address and store in destination)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`PUSH`</span>: Push value onto the stack</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`POP`</span>: Pop value from the stack</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`CALL`</span>: Call a procedure or function</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`RET`</span>: Return from a procedure</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`MOV`</span>: Move data between memory and registers</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`MOVSB`</span>: Move byte from DS:[SI] to ES:[DI]</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`MOVSW`</span>: Move word from DS:[SI] to ES:[DI]</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`MOVSD`</span>: Move doubleword from DS:[SI] to ES:[DI]</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`MOVSX`</span>: Move with sign extension (sign-extend byte to word or word to doubleword)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`MOVZX`</span>: Move with zero extension (zero-extend byte to word or word to doubleword)</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`MOVSX/MOVZX`</span> (register): Move with sign or zero extension from register to register</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`LEA`</span>: Load effective address (calculate address and store in destination)</li>
   </ul>
 
   <br/>
@@ -239,12 +239,12 @@ title: Assembly
   </div>
 
   <ul>
-    <li><span style={{ color: '#ff9900' }}>`CMP`</span>: Compare two operands</li>
-    <li><span style={{ color: '#ff9900' }}>`JMP`</span>: Unconditional jump</li>
-    <li><a href="/docs/Global%20Dictionnary/Global%20Dictionnary/Assembly#conditionnal-jumps-instructions" style={{ color: '#ff9900' }}>`All jumps`</a>: Conditional jumps based on comparison results</li>
-    <li><span style={{ color: '#ff9900' }}>`LOOP`</span>: Decrement loop counter and jump if counter is not zero</li>
-    <li><span style={{ color: '#ff9900' }}>`CALL`, `RET`</span>: Call and return from subroutines</li>
-    <li><span style={{ color: '#ff9900' }}>`INT`</span>: Software interrupt</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`CMP`</span>: Compare two operands</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`JMP`</span>: Unconditional jump</li>
+    <li><a href="/docs/Global%20Dictionnary/Global%20Dictionnary/Assembly#conditionnal-jumps-instructions" style={{ color: 'var(--md-basic-highlight)' }}>`All jumps`</a>: Conditional jumps based on comparison results</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`LOOP`</span>: Decrement loop counter and jump if counter is not zero</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`CALL`, `RET`</span>: Call and return from subroutines</li>
+    <li><span style={{ color: 'var(--md-basic-highlight)' }}>`INT`</span>: Software interrupt</li>
   </ul>
 
   <div>
