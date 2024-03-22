@@ -20,6 +20,11 @@
   --md-secondary-title-color: #DB2C00;
   --md-tertiary-title-color: #238044;
   --md-table-values-color: #B30000;
+
+  --haskell-comments: #24292f; 
+  --haskell-entity: #8250df;
+  --haskell-keywords-and-storage: #cf222e;
+  --haskell-constants-and-support: #0550ae;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -37,4 +42,9 @@
   --md-secondary-title-color: #FF3F0F;
   --md-tertiary-title-color: #37C86A;
   --md-table-values-color: #FF9999;
+
+  --haskell-comments: #8b949e;
+  --haskell-entity: #d2a8ff;
+  --haskell-keywords-and-storage: #ff7b72;
+  --haskell-constants-and-support: #569CD6;
 }
