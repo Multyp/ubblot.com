@@ -6,21 +6,21 @@ title: C Programming Tutorial - Day 1
 <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet"/>
 <div style={{ fontFamily: 'Poppins, sans-serif' }}>
     <div>
-        In today's lesson, we'll introduce you to the basics of C programming. Whether you're a seasoned developer or someone brand new to coding, this tutorial is designed to help you understand the fundamentals of the C language.
+        In today's lesson, I will introduce you to the basics of C programming. Whether you're a seasoned developer or someone brand new to coding, this tutorial is designed to help you understand the fundamentals of the C language. Even if you are completely new to programming, it is accessible as long as you have the motivation to learn.
     </div>
     ## <span style={{ color: 'var(--md-secondary-title-color)' }}>Understanding the Basics</span>
     <div>
-        Before we dive into coding, let's cover some essential concepts.
+        Before we dive into coding in C, let's cover some essential concepts.
     </div>
     ### <span style={{ color: 'var(--md-tertiary-title-color)' }}>What is C?</span>
     <div>
         <p>
-            &nbsp; &nbsp;C stands out as a cornerstone in the realm of programming languages, offering developers a powerful toolkit for crafting efficient and precise software solutions. While it's not alone in providing <span style={{ color: 'var(--md-basic-highlight)' }}>low-level control</span> (assembly language shares this trait), C's balance of readability and performance makes it a top choice for a wide range of applications.
+            &nbsp; &nbsp;C is a fundamental programming language known for its <span style={{ color: 'var(--md-basic-highlight)' }}>low-level</span> memory management capabilities and high performance. Its simplicity and efficiency make it a popular choice for various applications.
         </p>
     </div>
     <div>
         <p>
-            &nbsp; &nbsp;Consider the ubiquitous Linux operating system. Its kernel, the core component responsible for managing hardware resources, is primarily written in C. This means that every time you interact with a Linux-based device, whether it's your smartphone or a server powering a website, you're experiencing the impact of C's <span style={{ color: 'var(--md-basic-highlight)' }}>robustness</span> and <span style={{ color: 'var(--md-basic-highlight)' }}>versatility</span>.
+            &nbsp; &nbsp;Consider the Linux operating system. Its kernel, the core component responsible for managing hardware resources, is primarily written in C. This means that every time you interact with a Linux-based device, for example, a server powering a website, you're experiencing the impact of C's <span style={{ color: 'var(--md-basic-highlight)' }}>robustness</span> and <span style={{ color: 'var(--md-basic-highlight)' }}>versatility</span>.
         </p>
     </div>
     <div>
@@ -120,6 +120,62 @@ title: C Programming Tutorial - Day 1
             return 0;
         }
         ```
+        In the C programming language, characters are represented using ASCII (American Standard Code for Information Interchange) values. Each character is assigned a unique integer value.
+
+        In this solution:
+
+            - The variable c is initialized with the value 'a'.
+            - In C, characters are represented using single quotes, like 'a', which actually represent the ASCII value of 'a', which is 97.
+            - In ASCII, lowercase letters 'a' to 'z' are represented by consecutive integer values from 97 to 122.
+            - So, by initializing c with 'a', we are starting with the ASCII value of 'a', which is 97.
+            - We then iterate through the characters using a while loop until c reaches the ASCII value of 'z', which is 122.
+            - Within the loop, we call the my_putchar(c) function to output the character represented by the current ASCII value of c.
+
+        Therefore, by starting with 'a' and incrementing c until 'z', we ensure that all lowercase letters of the alphabet are printed in ascending order.
+
+        This solution leverages the ASCII values of characters to achieve the task of printing the lowercase alphabet.
+
+        An other solution would be :
+
+        ```c
+        #include <unistd.h>
+
+        void my_putchar(char c)
+        {
+            write(1, &c, 1);
+        }
+
+        /*
+        * This function, my_print_alpha_int, prints the
+        * lowercase alphabet in ascending order, starting from 'a',
+        * using integer values directly.
+        */
+        int my_print_alpha_int(void) {
+            // Initialize integer variable i with the ASCII value of 'a'
+            int i = 97; // ASCII value of 'a'
+
+            // Loop through characters using integer values
+            while (i <= 122) { // ASCII value of 'z'
+                // Convert integer value back to character and output
+                my_putchar((char)i);
+                // Increment the integer to move to the next one
+                i++;
+            }
+
+            // Return 0 to indicate successful execution
+            return 0;
+        }
+        ```
+        Explanation:
+
+        - In this solution, we use integer values directly to represent the ASCII values of characters.
+        - We initialize an integer variable i with the ASCII value of 'a', which is 97.
+        - We iterate through the characters using a while loop until i reaches the ASCII value of 'z', which is 122.
+        - Inside the loop, we convert the integer value i back to a character using a typecast (char)i and then output it using my_putchar.
+        - While this solution achieves the same result as the previous one, it introduces the concept of "phantom values."
+        - Phantom values are integer values that technically represent characters outside of the visible ASCII character set. For example, the integer value 127 might represent the ASCII DEL character, which is not a part of the lowercase alphabet. However, it would still be processed by the loop, potentially leading to unexpected behavior.
+        - Using integer values directly obscures the intent of the code and can make it harder to understand and maintain.
+        - Therefore, it's generally recommended to use character literals directly, as shown in the initial solution, to ensure clarity and avoid potential issues with phantom values.
     </details>
     <div>
         Congratulations! You've completed your first exercise in C programming. Feel free to experiment with the code and see how it works.
