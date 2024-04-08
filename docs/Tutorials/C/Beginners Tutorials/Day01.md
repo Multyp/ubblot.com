@@ -88,7 +88,26 @@ title: C Programming Tutorial - Day 1
             write(1, &c, 1);
         }
         ```
+        <br/>
+        ### Expected Output:
+        ```bash
+        abcdefghijklmnopqrstuvwxyz
+        ```
+        <br/>
     </div>
+    <details>
+        <summary><strong>Hints</strong></summary>
+        <div>
+            Before diving into the solution, here are some hints to help you tackle the problem:
+            <ul>
+                <li>Explore how characters are represented in C.</li>
+                <li>Learn about ASCII values and how they relate to characters.</li>
+                <li>Think about how you can iterate through characters in a sequence.</li>
+                <li>Consider how you can output characters using the provided <code>my_putchar</code> function.</li>
+            </ul>
+            These hints should give you a good starting point to work on the exercise. Good luck!
+        </div>
+    </details>
     <details>
         <summary><strong>Solution</strong></summary>
         ```c
@@ -176,10 +195,11 @@ title: C Programming Tutorial - Day 1
         - Phantom values are integer values that technically represent characters outside of the visible ASCII character set. For example, the integer value 127 might represent the ASCII DEL character, which is not a part of the lowercase alphabet. However, it would still be processed by the loop, potentially leading to unexpected behavior.
         - Using integer values directly obscures the intent of the code and can make it harder to understand and maintain.
         - Therefore, it's generally recommended to use character literals directly, as shown in the initial solution, to ensure clarity and avoid potential issues with phantom values.
+        <div>
+            *And voila, you've completed your first exercise in C programming.!*
+        </div>
     </details>
-    <div>
-        Congratulations! You've completed your first exercise in C programming. Feel free to experiment with the code and see how it works.
-    </div>
+    <br/>
     <h2>Conclusion</h2>
     <div>
         That wraps up Day 1 of our C programming tutorial. Today, you learned about the basics of the C language and completed your first programming exercise. Stay tuned for Day 2, where we'll cover more advanced topics and challenges.
