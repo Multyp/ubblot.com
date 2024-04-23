@@ -78,238 +78,238 @@ title: C Programming Tutorial - Day 1
     </div>
     ## <span style={{ color: 'var(--md-secondary-title-color)' }}>Exercise 01: Printing the Alphabet</span>
     <div>
-        Your first task is to write a C function called <code>my_print_alpha</code> that prints the lowercase alphabet in ascending order, starting from 'a'.
-        <br/>However, there's a twist: you can only use the <code>my_putchar</code> function to output characters. The <code>my_putchar</code> function takes a single character as input and outputs it.<br/>
-        ```c
-        #include <unistd.h>
+    Your first task is to write a C function called <code>my_print_alpha</code> that prints the lowercase alphabet in ascending order, starting from 'a'.
+    <br/>However, there's a twist: you can only use the <code>my_putchar</code> function to output characters. The <code>my_putchar</code> function takes a single character as input and outputs it.<br/>
+    ```c
+    #include <unistd.h>
 
-        void my_putchar(char c)
-        {
-            write(1, &c, 1);
-        }
-        ```
-        <br/>
-        ### Expected Output:
-        ```bash
-        abcdefghijklmnopqrstuvwxyz
-        ```
-        <br/>
-    </div>
-    <details>
-        <summary><strong>Hints</strong></summary>
-        <div>
-            Before diving into the solution, here are some hints to help you tackle the problem:
-            <ul>
-                <li>Explore how characters are represented in C.</li>
-                <li>Learn about `ASCII values` and how they relate to characters.</li>
-                <li>Think about how you can iterate through characters in a sequence.</li>
-                <li>Consider how you can output characters using the provided <code>my_putchar</code> function.</li>
-            </ul>
-            These hints should give you a good starting point to work on the exercise. Good luck!
-        </div>
-    </details>
-    <details>
-        <summary><strong>Solution</strong></summary>
-        ```c
-        #include <unistd.h>
-
-        void my_putchar(char c)
-        {
-            write(1, &c, 1);
-        }
-
-        /*
-        * This function, my_print_alpha, prints the
-        * lowercase alphabet in ascending order, starting from 'a'.
-        * It uses the my_putchar function to output characters.
-        */
-        int my_print_alpha(void) {
-            // Initialize character variable c with 'a'
-            char c = 'a';
-
-            // Loop through characters from 'a' to 'z'
-            while (c <= 'z') {
-                // Output the current character using my_putchar function
-                my_putchar(c);
-                // Increment the character to move to the next one
-                c++;
-            }
-
-            // Return 0 to indicate successful execution
-            return 0;
-        }
-        ```
-        In the C programming language, characters are represented using ASCII (American Standard Code for Information Interchange) values. Each character is assigned a unique integer value.
-
-        In this solution:
-
-            - The variable c is initialized with the value 'a'.
-            - In C, characters are represented using single quotes, like 'a', which actually represent the ASCII value of 'a', which is 97.
-            - In ASCII, lowercase letters 'a' to 'z' are represented by consecutive integer values from 97 to 122.
-            - So, by initializing c with 'a', we are starting with the ASCII value of 'a', which is 97.
-            - We then iterate through the characters using a while loop until c reaches the ASCII value of 'z', which is 122.
-            - Within the loop, we call the my_putchar(c) function to output the character represented by the current ASCII value of c.
-
-        Therefore, by starting with 'a' and incrementing c until 'z', we ensure that all lowercase letters of the alphabet are printed in ascending order.
-
-        This solution leverages the ASCII values of characters to achieve the task of printing the lowercase alphabet.
-
-        An other solution would be :
-
-        ```c
-        #include <unistd.h>
-
-        void my_putchar(char c)
-        {
-            write(1, &c, 1);
-        }
-
-        /*
-        * This function, my_print_alpha_int, prints the
-        * lowercase alphabet in ascending order, starting from 'a',
-        * using integer values directly.
-        */
-        int my_print_alpha_int(void) {
-            // Initialize integer variable i with the ASCII value of 'a'
-            int i = 97; // ASCII value of 'a'
-
-            // Loop through characters using integer values
-            while (i <= 122) { // ASCII value of 'z'
-                // Convert integer value back to character and output
-                my_putchar((char)i);
-                // Increment the integer to move to the next one
-                i++;
-            }
-
-            // Return 0 to indicate successful execution
-            return 0;
-        }
-        ```
-        Explanation:
-
-        - In this solution, we use integer values directly to represent the ASCII values of characters.
-        - We initialize an integer variable i with the ASCII value of 'a', which is 97.
-        - We iterate through the characters using a while loop until i reaches the ASCII value of 'z', which is 122.
-        - Inside the loop, we convert the integer value i back to a character using a typecast (char)i and then output it using my_putchar.
-        - While this solution achieves the same result as the previous one, it introduces the concept of "phantom values."
-        - Phantom values are integer values that technically represent characters outside of the visible ASCII character set. For example, the integer value 127 might represent the ASCII DEL character, which is not a part of the lowercase alphabet. However, it would still be processed by the loop, potentially leading to unexpected behavior.
-        - Using integer values directly obscures the intent of the code and can make it harder to understand and maintain.
-        - Therefore, it's generally recommended to use character literals directly, as shown in the initial solution, to ensure clarity and avoid potential issues with phantom values.
-        <div>
-            *And voila, you've completed your first exercise in C programming.!*
-        </div>
-    </details>
+    void my_putchar(char c)
+    {
+        write(1, &c, 1);
+    }
+    ```
     <br/>
-    ## <span style={{ color: 'var(--md-secondary-title-color)' }}>PAUSE: What is coding style ?</span>
-
-    &nbsp; &nbsp;Coding style refers to a set of conventions and guidelines followed by programmers to write clean, readable, and maintainable code. By adopting a coding style, you make it easier to read and understand code written by others, facilitating group work and collaboration. Additionally, coding style encourages structuring the code, making it clearer, which in turn facilitates reading, debugging, maintenance, logic definition, reusability, test writing, adding new features, and more.
-    
-    &nbsp; &nbsp;Adopting a coding style makes reading code written by others easier. As such, it facilitates group work, as
-    well as help given to you by the educational team and the assistants.
-    It is also an excellent way to encourage structuring the code and making it clearer, and thus facilitates:
-
-    - its reading;
-    - its debugging;
-    - its maintenance;
-    - its internal logic definition;
-    - its reusability;
-    - writing tests;
-    - adding new features;
-    - and even more. . .
-
-    &nbsp; &nbsp;A clean and structured code always feels nice to look at, so give yourself this treat. ;)
-    When you are facing a choice and you do not know what decision to make, always ask
-    yourself which one helps you make your code clearer, ergonomic and flexible.
-
-    ### <span style={{ color: 'var(--md-tertiary-title-color)' }}>Naming Conventions</span>
-    <div>
-        Variables and functions will use snake_case.
-        Constants will be written in all uppercase with underscores separating words.
-    </div>
-
-    ```c
-    void my_function()
-    {
-        int my_variable;
-        const int MAX_SIZE = 100;
-
-        // Function logic...
-    }
+    ### Expected Output:
+    ```bash
+    abcdefghijklmnopqrstuvwxyz
     ```
-
-    ### <span style={{ color: 'var(--md-tertiary-title-color)' }}>Indentation and Formatting</span>
+    <br/>
+</div>
+<details>
+    <summary><strong>Hints</strong></summary>
     <div>
-        Curly brackets will be on new lines, except for if statements.
-        Variables will be declared at the top of functions and separated from the function logic.
+        Before diving into the solution, here are some hints to help you tackle the problem:
+        <ul>
+            <li>Explore how characters are represented in C.</li>
+            <li>Learn about `ASCII values` and how they relate to characters.</li>
+            <li>Think about how you can iterate through characters in a sequence.</li>
+            <li>Consider how you can output characters using the provided <code>my_putchar</code> function.</li>
+        </ul>
+        These hints should give you a good starting point to work on the exercise. Good luck!
     </div>
-
+</details>
+<details>
+    <summary><strong>Solution</strong></summary>
     ```c
-    void my_function()
-    {
-        int i = 0;
+    #include <unistd.h>
 
-        if (condition) {
-            // Indentation with spaces
-            printf("Hello, world!\n");
-        } else {
-            // Indentation with tabs
-            printf("Goodbye, world!\n");
+    void my_putchar(char c)
+    {
+        write(1, &c, 1);
+    }
+
+    /*
+    * This function, my_print_alpha, prints the
+    * lowercase alphabet in ascending order, starting from 'a'.
+    * It uses the my_putchar function to output characters.
+    */
+    int my_print_alpha(void) {
+        // Initialize character variable c with 'a'
+        char c = 'a';
+
+        // Loop through characters from 'a' to 'z'
+        while (c <= 'z') {
+            // Output the current character using my_putchar function
+            my_putchar(c);
+            // Increment the character to move to the next one
+            c++;
         }
-        // Function logic continues...
-        return;
+
+        // Return 0 to indicate successful execution
+        return 0;
     }
     ```
+    In the C programming language, characters are represented using ASCII (American Standard Code for Information Interchange) values. Each character is assigned a unique integer value.
 
-    ### <span style={{ color: 'var(--md-tertiary-title-color)' }}>Comments and Documentation</span>
-    <div>
-        Comments should be used to explain complex logic or provide context where necessary.
-        Functions should be documented with descriptions of parameters, return values, and usage.
-    </div>
+    In this solution:
+
+        - The variable c is initialized with the value 'a'.
+        - In C, characters are represented using single quotes, like 'a', which actually represent the ASCII value of 'a', which is 97.
+        - In ASCII, lowercase letters 'a' to 'z' are represented by consecutive integer values from 97 to 122.
+        - So, by initializing c with 'a', we are starting with the ASCII value of 'a', which is 97.
+        - We then iterate through the characters using a while loop until c reaches the ASCII value of 'z', which is 122.
+        - Within the loop, we call the my_putchar(c) function to output the character represented by the current ASCII value of c.
+
+    Therefore, by starting with 'a' and incrementing c until 'z', we ensure that all lowercase letters of the alphabet are printed in ascending order.
+
+    This solution leverages the ASCII values of characters to achieve the task of printing the lowercase alphabet.
+
+    An other solution would be :
 
     ```c
-    /**
-     * @brief Calculates the square of a given integer.
-     * 
-     * @param x The integer to be squared.
-     * @return The square of the input integer.
-     */
-    int square(int x)
+    #include <unistd.h>
+
+    void my_putchar(char c)
     {
-        return x * x;
+        write(1, &c, 1);
+    }
+
+    /*
+    * This function, my_print_alpha_int, prints the
+    * lowercase alphabet in ascending order, starting from 'a',
+    * using integer values directly.
+    */
+    int my_print_alpha_int(void) {
+        // Initialize integer variable i with the ASCII value of 'a'
+        int i = 97; // ASCII value of 'a'
+
+        // Loop through characters using integer values
+        while (i <= 122) { // ASCII value of 'z'
+            // Convert integer value back to character and output
+            my_putchar((char)i);
+            // Increment the integer to move to the next one
+            i++;
+        }
+
+        // Return 0 to indicate successful execution
+        return 0;
     }
     ```
+    Explanation:
 
-    ### <span style={{ color: 'var(--md-tertiary-title-color)' }}>Whitespace and Line Length</span>
+    - In this solution, we use integer values directly to represent the ASCII values of characters.
+    - We initialize an integer variable i with the ASCII value of 'a', which is 97.
+    - We iterate through the characters using a while loop until i reaches the ASCII value of 'z', which is 122.
+    - Inside the loop, we convert the integer value i back to a character using a typecast (char)i and then output it using my_putchar.
+    - While this solution achieves the same result as the previous one, it introduces the concept of "phantom values."
+    - Phantom values are integer values that technically represent characters outside of the visible ASCII character set. For example, the integer value 127 might represent the ASCII DEL character, which is not a part of the lowercase alphabet. However, it would still be processed by the loop, potentially leading to unexpected behavior.
+    - Using integer values directly obscures the intent of the code and can make it harder to understand and maintain.
+    - Therefore, it's generally recommended to use character literals directly, as shown in the initial solution, to ensure clarity and avoid potential issues with phantom values.
     <div>
-        Lines should be limited to 80 characters.
-        Properly utilize whitespace to enhance code clarity.
+        *And voila, you've completed your first exercise in C programming.!*
     </div>
+</details>
+<br/>
+## <span style={{ color: 'var(--md-secondary-title-color)' }}>PAUSE: What is coding style ?</span>
 
-    ```c
-    // Good practice: Using whitespace to improve readability
-    int result = (a + b) * c;
-    ```
+&nbsp; &nbsp;Coding style refers to a set of conventions and guidelines followed by programmers to write clean, readable, and maintainable code. By adopting a coding style, you make it easier to read and understand code written by others, facilitating group work and collaboration. Additionally, coding style encourages structuring the code, making it clearer, which in turn facilitates reading, debugging, maintenance, logic definition, reusability, test writing, adding new features, and more.
 
-    ### <span style={{ color: 'var(--md-tertiary-title-color)' }}>Error Handling and Logging</span>
-    <div>
-        Proper error handling includes checking return values of functions and providing informative error messages.
-    </div>
+&nbsp; &nbsp;Adopting a coding style makes reading code written by others easier. As such, it facilitates group work, as
+well as help given to you by the educational team and the assistants.
+It is also an excellent way to encourage structuring the code and making it clearer, and thus facilitates:
 
-    ```c
-    FILE *file = fopen("example.txt", "r");
+- its reading;
+- its debugging;
+- its maintenance;
+- its internal logic definition;
+- its reusability;
+- writing tests;
+- adding new features;
+- and even more. . .
 
-    if (file == NULL) {
-        perror("Error opening file");
-        exit(EXIT_FAILURE);
+&nbsp; &nbsp;A clean and structured code always feels nice to look at, so give yourself this treat. ;)
+When you are facing a choice and you do not know what decision to make, always ask
+yourself which one helps you make your code clearer, ergonomic and flexible.
+
+### <span style={{ color: 'var(--md-tertiary-title-color)' }}>Naming Conventions</span>
+<div>
+    Variables and functions will use snake_case.
+    Constants will be written in all uppercase with underscores separating words.
+</div>
+
+```c
+void my_function()
+{
+    int my_variable;
+    const int MAX_SIZE = 100;
+
+    // Function logic...
+}
+```
+
+### <span style={{ color: 'var(--md-tertiary-title-color)' }}>Indentation and Formatting</span>
+<div>
+    Curly brackets will be on new lines, except for if statements.
+    Variables will be declared at the top of functions and separated from the function logic.
+</div>
+
+```c
+void my_function()
+{
+    int i = 0;
+
+    if (condition) {
+        // Indentation with spaces
+        printf("Hello, world!\n");
+    } else {
+        // Indentation with tabs
+        printf("Goodbye, world!\n");
     }
-    ```
+    // Function logic continues...
+    return;
+}
+```
 
-    ### <span style={{ color: 'var(--md-tertiary-title-color)' }}>Version Control and Collaboration</span>
-    <div>
-        Utilize version control systems like Git for managing code changes and collaborating with other developers.
-        Follow best practices such as branching, committing frequently, and using descriptive commit messages.
-    </div>
-    ## <span style={{ color: 'var(--md-secondary-title-color)' }}>Exercise 02: Displaying Characters of a String</span>
+### <span style={{ color: 'var(--md-tertiary-title-color)' }}>Comments and Documentation</span>
+<div>
+    Comments should be used to explain complex logic or provide context where necessary.
+    Functions should be documented with descriptions of parameters, return values, and usage.
+</div>
+
+```c
+/**
+    * @brief Calculates the square of a given integer.
+    * 
+    * @param x The integer to be squared.
+    * @return The square of the input integer.
+    */
+int square(int x)
+{
+    return x * x;
+}
+```
+
+### <span style={{ color: 'var(--md-tertiary-title-color)' }}>Whitespace and Line Length</span>
+<div>
+    Lines should be limited to 80 characters.
+    Properly utilize whitespace to enhance code clarity.
+</div>
+
+```c
+// Good practice: Using whitespace to improve readability
+int result = (a + b) * c;
+```
+
+### <span style={{ color: 'var(--md-tertiary-title-color)' }}>Error Handling and Logging</span>
+<div>
+    Proper error handling includes checking return values of functions and providing informative error messages.
+</div>
+
+```c
+FILE *file = fopen("example.txt", "r");
+
+if (file == NULL) {
+    perror("Error opening file");
+    exit(EXIT_FAILURE);
+}
+```
+
+### <span style={{ color: 'var(--md-tertiary-title-color)' }}>Version Control and Collaboration</span>
+<div>
+    Utilize version control systems like Git for managing code changes and collaborating with other developers.
+    Follow best practices such as branching, committing frequently, and using descriptive commit messages.
+</div>
+## <span style={{ color: 'var(--md-secondary-title-color)' }}>Exercise 02: Displaying Characters of a String</span>
 <div>
     Your second task is to write a C function called <code>my_putstr</code> that displays, one-by-one, the characters of a string. The address of the string’s first character will be found in the pointer passed as a parameter to the function.
     <br/>
@@ -334,39 +334,36 @@ title: C Programming Tutorial - Day 1
 </details>
 <details>
     <summary><strong>Solution</strong></summary>
-        ```c
-        #include <unistd.h>
+    ```c
+    #include <unistd.h>
 
-        void my_putchar(char c)
-        {
-            write(1, &c, 1);
+    void my_putchar(char c)
+    {
+        write(1, &c, 1);
+    }
+
+    /*
+    * This function, my_putstr, displays the characters of a string
+    * one-by-one using the my_putchar function.
+    */
+    int my_putstr(const char *str) {
+        // Loop through the string until the null terminator '\0' is reached
+        for (int i = 0; str[i] != '\0'; i++) {
+            // Output the current character using my_putchar function
+            my_putchar(str[i]);
         }
 
-        /*
-        * This function, my_putstr, displays the characters of a string
-        * one-by-one using the my_putchar function.
-        */
-        int my_putstr(const char *str) {
-            // Loop through the string until the null terminator '\0' is reached
-            while (*str != '\0') {
-                // Output the current character using my_putchar function
-                my_putchar(*str);
-                // Move to the next character in the string
-                str++;
-            }
+        // Return 0 to indicate successful execution
+        return 0;
+    }
+    ```
+    Explanation:
 
-            // Return 0 to indicate successful execution
-            return 0;
-        }
-        ```
-        Explanation:
-
-        - In this solution, we utilize pointer arithmetic to traverse through the string passed as a parameter.
-        - We start at the address pointed to by `str` and iterate through each character until we encounter the null terminator `\0`, which signifies the end of the string.
-        - Within the loop, we use `my_putchar(*str)` to output the current character pointed to by `str`.
-        - After each character is printed, we increment the `str` pointer to move to the next character in the string.
-        - This process continues until the null terminator is encountered, at which point the function exits.
-    </details>
+    - In this solution, we use a for loop to iterate through each character of the string passed as a parameter.
+    - The loop continues until the null terminator '\0' is encountered, indicating the end of the string.
+    - Within the loop, we use indexing (`str[i]`) to access each character of the string and pass it to the `my_putchar` function for output.
+    - This process continues until all characters of the string have been printed.
+</details>
 
     ## <span style={{ color: 'var(--md-secondary-title-color)' }}>Conclusion</span>
     <div>
