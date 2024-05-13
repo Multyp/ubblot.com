@@ -10,7 +10,7 @@ delete_img:
 	-$(DOCKER) rmi $(IMAGE_NAME)
 
 start_serv:
-	-$(DOCKER) run -d -p 3002:3002 --name $(WEBSITE_NAME) -m 1g $(IMAGE_NAME)
+	-$(DOCKER) run -d -p 3002:3002 --name $(WEBSITE_NAME) -m 256m $(IMAGE_NAME)
 
 stop_serv:
 	-$(DOCKER) stop $(WEBSITE_NAME)
