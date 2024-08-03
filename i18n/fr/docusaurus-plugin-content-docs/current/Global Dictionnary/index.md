@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# Welcome to the Developer Dictionnary
+# Bienvenue dans le Dictionnaire du Développeur
 
-Here are some various definitions if you want to study or discover new concepts !
+Voici quelques définitions variées si vous souhaitez étudier ou découvrir de nouveaux concepts !
 
-The goal of this Dictionnary is to help you find definitions when you want to study a subject,
-have an issue understanding something, making it easier to find all the information you need.
+L'objectif de ce Dictionnaire est de vous aider à trouver des définitions lorsque vous souhaitez étudier un sujet,
+avoir des difficultés à comprendre quelque chose, et rendre plus facile la recherche de toutes les informations dont vous avez besoin.
