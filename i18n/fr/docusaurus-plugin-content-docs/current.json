@@ -14,5 +14,13 @@
   "sidebar.devDictSidebar.category.Global Dictionnary": {
     "message": "Dictionnaire Global",
     "description": "The label for category Global Dictionnary in sidebar devDictSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Beginners Tutorials": {
+    "message": "Niveau débutant",
+    "description": "The label for category Beginners Tutorials in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Basics of C -  Day 01": {
+    "message": "Bases de C - Jour 01",
+    "description": "The label for category Basics of C -  Day 01 in sidebar tutorialSidebar"
   }
 }

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 id: "Exercise 01"
-title: Exercise 01
+title: Exercice 01
 ---
 
 <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet"/>
