@@ -6,7 +6,7 @@ title: Exercice 01
 
 <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet"/>
 <div style={{ fontFamily: 'Poppins, sans-serif' }}>
-    ## <span style={{ color: 'var(--md-secondary-title-color)' }}>Exercise 01: Printing the Alphabet</span>
+    ## <span style={{ color: 'var(--md-secondary-title-color)' }}>Exercice 01: Afficher l'alphabet</span>
     <div>
     Votre première tâche consiste à écrire une fonction C appelée <code>my_print_alpha</code> qui imprime l'alphabet en minuscules dans l'ordre croissant, en commençant par 'a'.
     <br/>Cependant, il y a un twist : vous ne pouvez utiliser que la fonction <code>my_putchar</code> pour afficher les caractères. La fonction <code>my_putchar</code> prend un seul caractère en entrée et l'affiche.<br/>
@@ -26,7 +26,7 @@ title: Exercice 01
     <br/>
 </div>
 <details>
-    <summary><strong>Hints</strong></summary>
+    <summary><strong>Indices</strong></summary>
     <div>
         Avant de plonger dans la solution, voici quelques indices pour vous aider à aborder le problème :
         <ul>

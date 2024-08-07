@@ -6,7 +6,7 @@ title: Exercice 02
 
 <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet"/>
 <div style={{ fontFamily: 'Poppins, sans-serif' }}>
-## <span style={{ color: 'var(--md-secondary-title-color)' }}>Exercise 02: Affichage des Caractères d'une Chaîne</span>
+## <span style={{ color: 'var(--md-secondary-title-color)' }}>Exercice 02: Affichage des Caractères d'une Chaîne</span>
 <div>
     Votre deuxième tâche consiste à écrire une fonction C appelée <code>my_putstr</code> qui affiche, un par un, les caractères d'une chaîne. L'adresse du premier caractère de la chaîne se trouve dans le pointeur passé en paramètre à la fonction.
     <br/>
@@ -17,7 +17,7 @@ title: Exercice 02
     <br/>
 </div>
 <details>
-    <summary><strong>Hints</strong></summary>
+    <summary><strong>Indices</strong></summary>
     <div>
         Avant de plonger dans la solution, voici quelques indices pour vous aider à aborder le problème :
         <ul>
