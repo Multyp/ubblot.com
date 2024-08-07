@@ -22,5 +22,9 @@
   "sidebar.tutorialSidebar.category.Basics of C -  Day 01": {
     "message": "Bases de C - Jour 01",
     "description": "The label for category Basics of C -  Day 01 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Basics of C - Day 02": {
+    "message": "Bases of C - Jour 02",
+    "description": "The label for category Basics of C - Day 02 in sidebar tutorialSidebar"
   }
 }
