@@ -6,11 +6,11 @@ sidebar_position: 1
 <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet"/>
 <div style={{ fontFamily: 'Poppins, sans-serif' }}>
     <div>
-        Dans cette leçon, je vais vous introduire aux bases de la programmation en C. Que vous soyez un développeur chevronné ou quelqu'un de tout nouveau dans le codage, ce tutoriel est conçu pour vous aider à comprendre les fondamentaux du langage C. Même si vous êtes complètement novice en programmation, il est accessible tant que vous avez la motivation d'apprendre.
+        Dans cette leçon, je vais vous introduire aux bases de la programmation en C. Que vous soyez un développeur chevronné ou quelqu'un de tout nouveau dans la programmation, ce tutoriel est conçu pour vous aider à comprendre les fondamentaux du langage C. Même si vous êtes complètement novice en programmation, il est accessible tant que vous avez la motivation d'apprendre.
     </div>
     ## <span style={{ color: 'var(--md-secondary-title-color)' }}>Comprendre les Bases</span>
     <div>
-        Avant de plonger dans le codage en C, couvrons quelques concepts essentiels.
+        Avant de plonger dans la programmation en C, couvrons quelques concepts essentiels.
     </div>
     ### <span style={{ color: 'var(--md-tertiary-title-color)' }}>Qu'est-ce que le C ?</span>
     <div>
